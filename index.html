@@ -218,14 +218,14 @@
       100% { left: 160%; }
     }
 
-    .orn { display: flex; align-items: center; gap: .75rem; margin: 1.25rem auto; max-width: 20rem; color: #dfb74c; font-size: .65rem; letter-spacing: .35em; }
+    .orn { display: flex; align-items: center; gap: .65rem; margin: 1.15rem auto; max-width: 18rem; color: #dfb74c; font-size: .62rem; letter-spacing: .32em; }
     .orn::before, .orn::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, #cca035, transparent); }
     .orn i { color: #FF0000; font-style: normal; }
 
     .count-box {
       position: relative; overflow: hidden;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.65));
-      border: 1px solid rgba(204,160,53,.35);
+      background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(0,0,0,.72));
+      border: 1px solid rgba(204,160,53,.38);
       transition: transform 0.3s ease, border-color 0.3s ease;
     }
     .count-box:hover { transform: translateY(-2px); border-color: rgba(236, 208, 118, 0.7); }
@@ -285,7 +285,7 @@
     </svg>
 
     <div class="seal-wrapper text-center px-5 sm:px-6 max-w-full">
-      <p class="font-cinzel text-gold-300/90 text-[10px] sm:text-xs tracking-[0.28em] sm:tracking-[0.4em] uppercase mb-5 sm:mb-6 drop-shadow">
+      <p class="font-cinzel text-gold-300/90 text-[10px] sm:text-xs tracking-[0.26em] sm:tracking-[0.4em] uppercase mb-5 sm:mb-6 drop-shadow">
         Invitación Exclusiva
       </p>
 
@@ -307,17 +307,17 @@
 
   <!-- Destellos ambientales flotantes -->
   <div aria-hidden="true" class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="sparkle absolute top-10 left-4 sm:top-12 sm:left-10 text-gold-300 text-base sm:text-lg opacity-40">✦</div>
-    <div class="sparkle absolute top-1/4 right-4 sm:right-12 text-[#FF0000] text-xl sm:text-2xl opacity-50" style="animation-delay: 1.5s;">✧</div>
-    <div class="sparkle absolute bottom-1/3 left-5 sm:left-16 text-gold-300 text-lg sm:text-xl opacity-30" style="animation-delay: 2.5s;">✦</div>
-    <div class="sparkle absolute bottom-16 right-5 sm:bottom-20 sm:right-20 text-[#FF0000] text-2xl sm:text-3xl opacity-40" style="animation-delay: 0.8s;">★</div>
-    <div class="sparkle absolute top-2/3 left-1/4 text-gold-400 text-xs sm:text-sm opacity-60" style="animation-delay: 3.2s;">✧</div>
-    <div class="sparkle absolute top-1/2 right-1/4 text-gold-200 text-sm sm:text-base opacity-45" style="animation-delay: 4.1s;">✦</div>
+    <div class="sparkle absolute top-10 left-3 sm:top-12 sm:left-10 text-gold-300 text-sm sm:text-lg opacity-35">✦</div>
+    <div class="sparkle absolute top-1/4 right-3 sm:right-12 text-[#FF0000] text-lg sm:text-2xl opacity-45" style="animation-delay: 1.5s;">✧</div>
+    <div class="sparkle absolute bottom-1/3 left-4 sm:left-16 text-gold-300 text-base sm:text-xl opacity-30" style="animation-delay: 2.5s;">✦</div>
+    <div class="sparkle absolute bottom-16 right-4 sm:bottom-20 sm:right-20 text-[#FF0000] text-xl sm:text-3xl opacity-40" style="animation-delay: 0.8s;">★</div>
+    <div class="sparkle absolute top-2/3 left-1/4 text-gold-400 text-xs sm:text-sm opacity-55" style="animation-delay: 3.2s;">✧</div>
+    <div class="sparkle absolute top-1/2 right-1/4 text-gold-200 text-xs sm:text-base opacity-40" style="animation-delay: 4.1s;">✦</div>
   </div>
 
   <!-- Reproductor Flotante -->
-  <aside class="fixed top-3 right-3 sm:top-5 sm:right-5 z-50" data-purpose="music-ambient-player">
-    <button class="hidden flex items-center gap-2 sm:gap-3 px-3.5 py-2 sm:px-4 sm:py-2.5 bg-black/85 backdrop-blur-md border border-gold-400/50 rounded-full text-[11px] sm:text-xs tracking-wider uppercase text-gold-200 shadow-xl hover:border-gold-300 hover:bg-black transition-all cursor-pointer" id="musicToggleBtn" type="button">
+  <aside class="fixed top-2.5 right-2.5 sm:top-5 sm:right-5 z-50" data-purpose="music-ambient-player">
+    <button class="hidden flex items-center gap-2 sm:gap-3 px-3 py-1.5 sm:px-4 sm:py-2.5 bg-black/85 backdrop-blur-md border border-gold-400/50 rounded-full text-[10px] sm:text-xs tracking-wider uppercase text-gold-200 shadow-xl hover:border-gold-300 hover:bg-black transition-all cursor-pointer" id="musicToggleBtn" type="button">
       <span class="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
         <span class="hidden animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF0000] opacity-75" id="musicPulse"></span>
         <span class="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-[#FF0000]"></span>
@@ -333,12 +333,12 @@
   </aside>
 
   <!-- Contenedor Principal -->
-  <main class="relative z-10 w-full max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-10 md:py-12 flex flex-col items-center">
+  <main class="relative z-10 w-full max-w-4xl mx-auto px-2.5 sm:px-6 lg:px-8 py-5 sm:py-10 md:py-12 flex flex-col items-center">
 
     <!-- Tarjeta de Invitación -->
     <article id="mainCard" class="w-full max-w-2xl bg-gradient-to-b from-[#0b0b0b] via-[#150404] to-[#020202] border border-gold-500/50 shadow-card-luxury rounded-2xl overflow-hidden relative backdrop-blur-md" data-purpose="invitation-card">
       
-      <svg aria-hidden="true" class="absolute top-0 left-0 w-full h-12 sm:h-14 z-10 pointer-events-none" preserveAspectRatio="none" viewBox="0 0 672 56">
+      <svg aria-hidden="true" class="absolute top-0 left-0 w-full h-11 sm:h-14 z-10 pointer-events-none" preserveAspectRatio="none" viewBox="0 0 672 56">
         <defs>
           <linearGradient id="flapG" x1="0" x2="0" y1="0" y2="1">
             <stop offset="0" stop-color="#3a0a0a"/>
@@ -348,27 +348,27 @@
         <path d="M0 0 L336 55 L672 0 Z" fill="url(#flapG)" stroke="#cca035" stroke-opacity=".6" vector-effect="non-scaling-stroke"/>
       </svg>
 
-      <div class="seal absolute top-5 sm:top-[28px] left-1/2 -translate-x-1/2 z-20 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#8a0000] via-[#FF0000] to-[#b30000] border-2 border-gold-300 flex items-center justify-center text-gold-100 font-cinzel font-bold text-[11px] sm:text-xs">
+      <div class="seal absolute top-4 sm:top-[28px] left-1/2 -translate-x-1/2 z-20 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#8a0000] via-[#FF0000] to-[#b30000] border-2 border-gold-300 flex items-center justify-center text-gold-100 font-cinzel font-bold text-[10px] sm:text-xs">
         <span class="absolute inset-1 rounded-full border border-dashed border-gold-200/60"></span>
         <span class="relative">2026</span>
       </div>
 
       <!-- Marco interno ornamental -->
-      <div class="p-4 sm:p-7 md:p-10 border border-gold-400/25 m-2 sm:m-3 md:m-4 rounded-xl relative">
-        <span class="hidden sm:inline absolute top-2.5 left-2.5 text-[#FF0000] text-xs">◆</span>
-        <span class="hidden sm:inline absolute top-2.5 right-2.5 text-[#FF0000] text-xs">◆</span>
-        <span class="hidden sm:inline absolute bottom-2.5 left-2.5 text-[#FF0000] text-xs">◆</span>
-        <span class="hidden sm:inline absolute bottom-2.5 right-2.5 text-[#FF0000] text-xs">◆</span>
+      <div class="px-3.5 py-5 sm:p-7 md:p-10 border border-gold-400/25 m-1.5 sm:m-3 md:m-4 rounded-xl relative">
+        <span class="inline absolute top-2 left-2.5 sm:top-2.5 sm:left-2.5 text-[#FF0000] text-[10px] sm:text-xs opacity-80">◆</span>
+        <span class="inline absolute top-2 right-2.5 sm:top-2.5 sm:right-2.5 text-[#FF0000] text-[10px] sm:text-xs opacity-80">◆</span>
+        <span class="inline absolute bottom-2 left-2.5 sm:bottom-2.5 sm:left-2.5 text-[#FF0000] text-[10px] sm:text-xs opacity-80">◆</span>
+        <span class="inline absolute bottom-2 right-2.5 sm:bottom-2.5 sm:right-2.5 text-[#FF0000] text-[10px] sm:text-xs opacity-80">◆</span>
 
         <!-- Encabezado -->
-        <header class="text-center pt-12 sm:pt-16 pb-2 reveal">
-          <p class="font-cinzel text-gold-300 text-[11px] sm:text-xs md:text-sm tracking-[0.22em] sm:tracking-[0.35em] uppercase mb-2">
+        <header class="text-center pt-10 sm:pt-16 pb-1 sm:pb-2 reveal">
+          <p class="font-cinzel text-gold-300 text-[10px] sm:text-xs md:text-sm tracking-[0.22em] sm:tracking-[0.35em] uppercase mb-1.5 sm:mb-2">
             Invitación de Honor
           </p>
           <h1 class="font-script text-5xl sm:text-6xl md:text-8xl shimmer py-1 sm:py-2 leading-tight">
             ¡Lo logramos!
           </h1>
-          <p class="font-cinzel text-gold-200/90 text-xs sm:text-sm tracking-[0.18em] sm:tracking-[0.25em] uppercase mt-2">
+          <p class="font-cinzel text-gold-200/90 text-[11px] sm:text-sm tracking-[0.18em] sm:tracking-[0.25em] uppercase mt-1.5 sm:mt-2">
             She did it! • Clase 2026
           </p>
         </header>
@@ -376,14 +376,14 @@
         <div aria-hidden="true" class="orn reveal"><span><i>◆</i> ✦ <i>◆</i></span></div>
 
         <!-- Retrato de la Graduada -->
-        <section class="reveal my-6 sm:my-8 flex flex-col items-center" data-purpose="honoree-spotlight">
+        <section class="reveal my-5 sm:my-8 flex flex-col items-center" data-purpose="honoree-spotlight">
           <div class="relative group max-w-full">
-            <div class="absolute -inset-2 bg-gradient-to-r from-gold-600 via-gold-300 to-[#FF0000] rounded-2xl blur-md opacity-55 group-hover:opacity-90 transition duration-700"></div>
-            <div class="photo-sheen relative w-56 h-80 sm:w-64 sm:h-96 md:w-80 md:h-[460px] rounded-xl overflow-hidden border-2 border-gold-400/80 shadow-2xl bg-neutral-900">
+            <div class="absolute -inset-1.5 sm:-inset-2 bg-gradient-to-r from-gold-600 via-gold-300 to-[#FF0000] rounded-2xl blur-md opacity-55 group-hover:opacity-90 transition duration-700"></div>
+            <div class="photo-sheen relative w-52 h-76 sm:w-64 sm:h-96 md:w-80 md:h-[460px] rounded-xl overflow-hidden border-2 border-gold-400/80 shadow-2xl bg-neutral-900">
               <img alt="Retrato oficial de graduación de Kaori con birrete y toga" class="w-full h-full object-cover object-center transform transition duration-700 group-hover:scale-105" src="image_1.jpeg">
               <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/15 pointer-events-none"></div>
               <div class="absolute inset-2 rounded-lg border border-gold-200/40 pointer-events-none"></div>
-              <div class="absolute top-3 right-3 bg-emerald-950/85 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full border border-gold-400/70 text-gold-300 text-[11px] sm:text-xs font-cinzel font-semibold tracking-wider flex items-center gap-1.5 shadow-md">
+              <div class="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 bg-emerald-950/85 backdrop-blur-md px-2.5 sm:px-3 py-1 rounded-full border border-gold-400/70 text-gold-300 text-[10px] sm:text-xs font-cinzel font-semibold tracking-wider flex items-center gap-1 shadow-md">
                 🎓 2026
               </div>
             </div>
@@ -393,70 +393,70 @@
             <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl text-neutral-100 tracking-wide font-medium leading-snug">
               Kaori Danaé Rivera Romero
             </h2>
-            <p class="text-gold-400 text-[11px] sm:text-xs md:text-sm font-cinzel tracking-[0.16em] sm:tracking-widest uppercase mt-1.5">
+            <p class="text-gold-400 text-[10px] sm:text-xs md:text-sm font-cinzel tracking-[0.14em] sm:tracking-widest uppercase mt-1.5">
               Bachillerato en Desarrollo de Software
             </p>
-            <p class="font-serif italic text-neutral-300 text-sm sm:text-base md:text-lg max-w-md mx-auto mt-3 leading-relaxed">
+            <p class="font-serif italic text-neutral-300 text-sm sm:text-base md:text-lg max-w-md mx-auto mt-3 leading-relaxed px-1">
               "Con inmensa gratitud por el camino recorrido y entusiasmo por los nuevos horizontes, celebremos juntos este gran sueño cumplido."
             </p>
           </div>
         </section>
 
         <!-- Contador Regresivo -->
-        <section class="reveal my-6 sm:my-8 py-4 sm:py-5 px-3 sm:px-4 bg-emerald-950/75 rounded-xl border border-gold-400/30 text-center" data-purpose="countdown-timer">
-          <p class="text-[11px] sm:text-xs uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gold-300 font-cinzel mb-3 sm:mb-4">
+        <section class="reveal my-5 sm:my-8 py-4 sm:py-5 px-2.5 sm:px-4 bg-emerald-950/80 rounded-xl border border-gold-400/35 text-center shadow-inner" data-purpose="countdown-timer">
+          <p class="text-[10px] sm:text-xs uppercase tracking-[0.18em] sm:tracking-[0.25em] text-gold-300 font-cinzel mb-3 sm:mb-4">
             Tiempo para el gran momento
           </p>
           <div class="grid grid-cols-4 gap-1.5 sm:gap-3 md:gap-4 max-w-md mx-auto font-cinzel">
-            <div class="count-box p-2 sm:p-2.5 rounded-lg">
-              <span class="block text-xl sm:text-2xl md:text-3xl font-bold text-gold-200" id="daysCount">00</span>
-              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider">Días</span>
+            <div class="count-box py-2 px-1.5 sm:p-2.5 rounded-lg">
+              <span class="block text-lg sm:text-2xl md:text-3xl font-bold text-gold-200 leading-tight" id="daysCount">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider mt-0.5 block">Días</span>
             </div>
-            <div class="count-box p-2 sm:p-2.5 rounded-lg">
-              <span class="block text-xl sm:text-2xl md:text-3xl font-bold text-gold-200" id="hoursCount">00</span>
-              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider">Horas</span>
+            <div class="count-box py-2 px-1.5 sm:p-2.5 rounded-lg">
+              <span class="block text-lg sm:text-2xl md:text-3xl font-bold text-gold-200 leading-tight" id="hoursCount">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider mt-0.5 block">Horas</span>
             </div>
-            <div class="count-box p-2 sm:p-2.5 rounded-lg">
-              <span class="block text-xl sm:text-2xl md:text-3xl font-bold text-gold-200" id="minutesCount">00</span>
-              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider">Min</span>
+            <div class="count-box py-2 px-1.5 sm:p-2.5 rounded-lg">
+              <span class="block text-lg sm:text-2xl md:text-3xl font-bold text-gold-200 leading-tight" id="minutesCount">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider mt-0.5 block">Min</span>
             </div>
-            <div class="count-box p-2 sm:p-2.5 rounded-lg">
-              <span class="block text-xl sm:text-2xl md:text-3xl font-bold text-gold-200" id="secondsCount">00</span>
-              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider">Seg</span>
+            <div class="count-box py-2 px-1.5 sm:p-2.5 rounded-lg">
+              <span class="block text-lg sm:text-2xl md:text-3xl font-bold text-gold-200 leading-tight" id="secondsCount">00</span>
+              <span class="text-[9px] sm:text-[10px] md:text-xs text-neutral-400 uppercase tracking-wider mt-0.5 block">Seg</span>
             </div>
           </div>
         </section>
 
         <!-- Detalles Clave del Evento -->
-        <section class="reveal my-6 sm:my-8 py-5 sm:py-6 border-y border-gold-400/30" data-purpose="event-details-grid">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gold-500/20">
-            <div class="pt-2 md:pt-0 md:px-3 flex flex-col items-center justify-center">
-              <span class="text-gold-400 font-cinzel text-[11px] sm:text-xs uppercase tracking-widest">Fecha</span>
-              <p class="font-serif text-2xl sm:text-3xl text-[#FF0000] font-bold mt-1">29</p>
-              <p class="font-cinzel text-xs sm:text-sm text-gold-200 tracking-wider uppercase">Noviembre • 2026</p>
+        <section class="reveal my-5 sm:my-8 py-4 sm:py-6 border-y border-gold-400/30 bg-black/25 rounded-xl sm:rounded-none sm:bg-transparent" data-purpose="event-details-grid">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gold-500/20">
+            <div class="pt-1 md:pt-0 md:px-3 flex flex-col items-center justify-center">
+              <span class="text-gold-400 font-cinzel text-[10px] sm:text-xs uppercase tracking-widest">Fecha</span>
+              <p class="font-serif text-2xl sm:text-3xl text-[#FF0000] font-bold mt-0.5 sm:mt-1">06</p>
+              <p class="font-cinzel text-xs sm:text-sm text-gold-200 tracking-wider uppercase">Diciembre • 2026</p>
             </div>
-            <div class="pt-4 md:pt-0 md:px-3 flex flex-col items-center justify-center">
-              <span class="text-gold-400 font-cinzel text-[11px] sm:text-xs uppercase tracking-widest">Lugar</span>
+            <div class="pt-3.5 md:pt-0 md:px-3 flex flex-col items-center justify-center">
+              <span class="text-gold-400 font-cinzel text-[10px] sm:text-xs uppercase tracking-widest">Lugar</span>
               <p class="font-serif text-lg sm:text-xl text-neutral-100 font-semibold mt-1">Casa de la festejada</p>
             </div>
-            <div class="pt-4 md:pt-0 md:px-3 flex flex-col items-center justify-center">
-              <span class="text-gold-400 font-cinzel text-[11px] sm:text-xs uppercase tracking-widest">Hora de Celebración</span>
-              <p class="font-serif text-2xl sm:text-3xl text-[#FF0000] font-bold mt-1">2:30</p>
+            <div class="pt-3.5 md:pt-0 md:px-3 flex flex-col items-center justify-center">
+              <span class="text-gold-400 font-cinzel text-[10px] sm:text-xs uppercase tracking-widest">Hora de Celebración</span>
+              <p class="font-serif text-2xl sm:text-3xl text-[#FF0000] font-bold mt-0.5 sm:mt-1">3:00</p>
               <p class="font-cinzel text-xs sm:text-sm text-gold-200 tracking-wider uppercase">PM</p>
             </div>
           </div>
         </section>
 
         <!-- Botones de Acción Rápida -->
-        <section class="reveal my-6 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto" data-purpose="quick-actions">
-          <a class="min-h-[44px] flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gold-400/40 bg-emerald-950/60 hover:bg-gold-500/15 hover:border-gold-300 text-xs font-medium text-gold-200 transition-all text-center" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Graduaci%C3%B3n+de+Kaori+Rivera&amp;dates=20261129T143000/20261129T200000&amp;details=Celebraci%C3%B3n+de+graduaci%C3%B3n+de+Kaori+Dana%C3%A9+Rivera+Romero.&amp;location=Casa+de+la+festejada" rel="noopener noreferrer" target="_blank">
+        <section class="reveal my-5 sm:my-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 max-w-lg mx-auto" data-purpose="quick-actions">
+          <a class="min-h-[46px] flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gold-400/45 bg-emerald-950/75 hover:bg-gold-500/15 hover:border-gold-300 text-xs font-medium text-gold-200 transition-all text-center shadow-sm" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Graduaci%C3%B3n+de+Kaori+Rivera&amp;dates=20261206T150000/20261206T200000&amp;details=Celebraci%C3%B3n+de+graduaci%C3%B3n+de+Kaori+Dana%C3%A9+Rivera+Romero.&amp;location=Casa+de+la+festejada" rel="noopener noreferrer" target="_blank">
             <svg class="w-4 h-4 text-gold-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
             </svg>
             <span>Añadir al Calendario</span>
           </a>
 
-          <button class="min-h-[44px] flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gold-400/40 bg-emerald-950/60 hover:bg-gold-500/15 hover:border-gold-300 text-xs font-medium text-gold-200 transition-all cursor-pointer text-center" onclick="document.getElementById('giftModal').classList.remove('hidden')" type="button">
+          <button class="min-h-[46px] flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-gold-400/45 bg-emerald-950/75 hover:bg-gold-500/15 hover:border-gold-300 text-xs font-medium text-gold-200 transition-all cursor-pointer text-center shadow-sm" onclick="document.getElementById('giftModal').classList.remove('hidden')" type="button">
             <svg class="w-4 h-4 text-gold-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
             </svg>
@@ -465,10 +465,10 @@
         </section>
 
         <!-- Formulario RSVP conectado a tu lista privada -->
-        <section class="mt-7 sm:mt-8 pt-2 reveal" data-purpose="rsvp-form" id="rsvp">
+        <section class="mt-6 sm:mt-8 pt-1 sm:pt-2 reveal" data-purpose="rsvp-form" id="rsvp">
           <div aria-hidden="true" class="orn"><span><i>◆</i> ✦ <i>◆</i></span></div>
-          <div class="text-center mb-5 sm:mb-6">
-            <h3 class="font-cinzel text-lg sm:text-xl text-gold-200 tracking-wider">
+          <div class="text-center mb-4 sm:mb-6">
+            <h3 class="font-cinzel text-base sm:text-xl text-gold-200 tracking-wider">
               Confirmación de Asistencia (R.S.V.P.)
             </h3>
             <p class="text-xs text-neutral-300 mt-1">
@@ -476,20 +476,20 @@
             </p>
           </div>
 
-          <form class="space-y-4 max-w-lg mx-auto" id="rsvpForm" onsubmit="event.preventDefault(); handleRsvpSubmit();">
+          <form class="space-y-3.5 sm:space-y-4 max-w-lg mx-auto" id="rsvpForm" onsubmit="event.preventDefault(); handleRsvpSubmit();">
             <div>
-              <label class="block text-[11px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-1.5" for="guestName">Nombre y Apellido *</label>
-              <input class="w-full bg-emerald-950/70 border border-gold-500/40 rounded-lg px-3.5 sm:px-4 py-2.5 text-neutral-100 placeholder-neutral-500 text-sm focus:border-gold-300 focus:ring-1 focus:ring-gold-300 outline-none transition" id="guestName" placeholder="Ej. Familia Rodríguez o Nombre Invitado" required="" type="text">
+              <label class="block text-[10px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-1.5" for="guestName">Nombre y Apellido *</label>
+              <input class="w-full bg-emerald-950/80 border border-gold-500/40 rounded-lg px-3.5 sm:px-4 py-2.5 text-neutral-100 placeholder-neutral-500 text-sm focus:border-gold-300 focus:ring-1 focus:ring-gold-300 outline-none transition" id="guestName" placeholder="Ej. Familia Rodríguez o Nombre Invitado" required="" type="text">
             </div>
 
             <div>
-              <label class="block text-[11px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-2">¿Nos acompañarás? *</label>
+              <label class="block text-[10px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-2">¿Nos acompañarás? *</label>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-                <label class="min-h-[44px] flex items-center gap-2.5 p-3 rounded-lg border border-gold-500/30 bg-emerald-950/40 cursor-pointer hover:border-gold-400 transition has-[:checked]:border-[#FF0000] has-[:checked]:bg-[#FF0000]/10">
+                <label class="min-h-[46px] flex items-center gap-2.5 p-3 rounded-lg border border-gold-500/35 bg-emerald-950/55 cursor-pointer hover:border-gold-400 transition has-[:checked]:border-[#FF0000] has-[:checked]:bg-[#FF0000]/15">
                   <input checked="" class="text-[#FF0000] focus:ring-[#FF0000] bg-black/50 border-gold-400 shrink-0" name="attendance" type="radio" value="si">
                   <span class="text-xs sm:text-sm text-neutral-200">¡Sí, con mucho gusto!</span>
                 </label>
-                <label class="min-h-[44px] flex items-center gap-2.5 p-3 rounded-lg border border-gold-500/30 bg-emerald-950/40 cursor-pointer hover:border-gold-400 transition has-[:checked]:border-[#FF0000] has-[:checked]:bg-[#FF0000]/10">
+                <label class="min-h-[46px] flex items-center gap-2.5 p-3 rounded-lg border border-gold-500/35 bg-emerald-950/55 cursor-pointer hover:border-gold-400 transition has-[:checked]:border-[#FF0000] has-[:checked]:bg-[#FF0000]/15">
                   <input class="text-[#FF0000] focus:ring-[#FF0000] bg-black/50 border-gold-400 shrink-0" name="attendance" type="radio" value="no">
                   <span class="text-xs sm:text-sm text-neutral-200">Acompañaré a la distancia</span>
                 </label>
@@ -497,12 +497,12 @@
             </div>
 
             <div>
-              <label class="block text-[11px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-1.5" for="guestNote">Dedicatoria para Kaori (Opcional)</label>
-              <textarea class="w-full bg-emerald-950/70 border border-gold-500/40 rounded-lg px-3.5 sm:px-4 py-2 text-neutral-100 placeholder-neutral-500 text-sm focus:border-gold-300 focus:ring-1 focus:ring-gold-300 outline-none transition" id="guestNote" placeholder="Escribe tus buenos deseos y felicitaciones..." rows="2"></textarea>
+              <label class="block text-[10px] sm:text-xs font-cinzel tracking-wider text-gold-300 uppercase mb-1.5" for="guestNote">Dedicatoria para Kaori (Opcional)</label>
+              <textarea class="w-full bg-emerald-950/80 border border-gold-500/40 rounded-lg px-3.5 sm:px-4 py-2 text-neutral-100 placeholder-neutral-500 text-sm focus:border-gold-300 focus:ring-1 focus:ring-gold-300 outline-none transition" id="guestNote" placeholder="Escribe tus buenos deseos y felicitaciones..." rows="2"></textarea>
             </div>
 
-            <div class="pt-2">
-              <button class="w-full gold-button-gradient text-emerald-950 font-cinzel font-bold text-xs sm:text-sm tracking-widest uppercase py-3.5 px-5 sm:px-6 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer transition transform active:scale-[0.99]" id="rsvpSubmitBtn" type="submit">
+            <div class="pt-1.5 sm:pt-2">
+              <button class="w-full min-h-[48px] gold-button-gradient text-emerald-950 font-cinzel font-bold text-xs sm:text-sm tracking-widest uppercase py-3.5 px-4 sm:px-6 rounded-lg shadow-lg flex items-center justify-center gap-2 cursor-pointer transition transform active:scale-[0.99]" id="rsvpSubmitBtn" type="submit">
                 <span id="rsvpBtnText">Confirmar Mi Asistencia</span>
                 <span class="text-base">✨</span>
               </button>
@@ -529,7 +529,7 @@
         </section>
 
         <!-- Pie de tarjeta -->
-        <footer class="mt-8 sm:mt-10 pt-2 text-center reveal text-neutral-400 text-[11px] sm:text-xs space-y-1">
+        <footer class="mt-7 sm:mt-10 pt-2 text-center reveal text-neutral-400 text-[11px] sm:text-xs space-y-1">
           <p class="font-cinzel tracking-widest text-gold-300/80">#KaoriGrad • #SheDidIt</p>
           <p>Con cariño especial: Familia Rivera Romero &amp; Invitados de Honor</p>
         </footer>
@@ -565,9 +565,9 @@
     // =========================================================================
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzqm65otTSE1-K8VrMrGm7CyecXhsY7lZGH4TxxwuIFTFj_Lb4wu-UJwUY6zBqzQ1CY/exec';
 
-    // 1. Contador al 29 de Noviembre de 2026, 2:30 PM
+    // 1. Contador al 6 de Diciembre de 2026, 3:00 PM
     function updateCountdown() {
-      const eventDate = new Date('2026-11-29T14:30:00').getTime();
+      const eventDate = new Date('2026-12-06T15:00:00').getTime();
       const now = new Date().getTime();
       let distance = Math.max(0, eventDate - now);
 
